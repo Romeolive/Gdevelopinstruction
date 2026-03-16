@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Roman LI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDevelop инструкция</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Инструкция по GDevelop</h1>
+  <header class="header">
+    <div class="logo">
+      <img class="logo-image" src="favicon.svg" alt="logo">
+    </div>
 
-<p>Добро пожаловать!</p>
+    <nav class="nav" id="nav">
+      <a href="#">Главная</a>
+      <a href="#">Уроки</a>
+      <a href="#">Проекты</a>
+      <a href="#">Ресурсы</a>
+      <a href="#">Контакты</a>
+    </nav>
 
-<p>Здесь будут инструкции по созданию игр.</p>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
 
+  <section class="hero">
+    <h1>Инструкция по GDevelop</h1>
+    <p>
+      На этой странице вы найдете пошаговую инструкцию
+      по созданию простой игры.
+    </p>
+  </section>
+
+  <section class="content">
+    <h2>1. Создание проекта</h2>
+    <p>Откройте GDevelop и создайте новый проект. Выберите пустую сцену.</p>
+
+    <h2>2. Добавление пола</h2>
+    <p>Добавьте новый объект Sprite. Назовите его Floor. Разместите его внизу сцены.</p>
+
+    <h2>3. Добавление игрока</h2>
+    <p>Создайте объект Player. Это будет ваш персонаж.</p>
+
+    <h2>4. Столкновение</h2>
+    <p>Добавьте событие: Player сталкивается с Floor.</p>
+
+    <h2>5. Движение</h2>
+    <p>Добавьте управление: стрелки или WASD.</p>
+
+    <h2>6. Прыжок</h2>
+    <p>Добавьте событие: кнопка Space → игрок прыгает.</p>
+  </section>
+
+  <footer>
+    <p>GDevelop инструкция</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
